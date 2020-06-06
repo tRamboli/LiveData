@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LiveData</string>
+    <string name="title_home">Photos</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title">Title</string>
+</resources>

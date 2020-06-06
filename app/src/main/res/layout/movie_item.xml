@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/text"
+        android:layout_alignParentTop="true"
+        android:text="2008"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/text"
+        android:layout_below="@id/year"
+        android:text="Bolt"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/poster_card"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/title"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="10dp"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/title"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/poster_card"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-60dp"
+        android:elevation="10dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rating_star"
+            android:contentDescription="rating"
+            android:tint="@color/star"
+            />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="7"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>
