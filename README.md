@@ -10,6 +10,16 @@ The project also includes RecyclerView that shows the LiveData.
  * **RecyclerView** 
  * **MVVM design pattern**
  
+ Usage
+------------------------------------
+I've used The Movie Database API as data source for this example. You need a API key from here
+https://www.themoviedb.org/settings/api
+
+Copy and paste your Key in MovieClientInstance.java
+```java
+public final static String api_key = "YOUR_API_KEY";
+```
+ 
 Libraries
 ------------------------------------
 
